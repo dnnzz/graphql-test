@@ -38,6 +38,7 @@ type Query {
 
 type Mutation {
   addPet(input: NewPetInput!): Pet!
+  deletePet(id: ID!) : Pet
 }
 `;
 

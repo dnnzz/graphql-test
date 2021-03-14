@@ -17,12 +17,16 @@ const createPetModel = db => {
 
     create(pet) {
       const newPet = {id: nanoid(), createdAt: Date.now(), ...pet}
-      
       db.get('pet')
         .push(newPet)
         .write()
 
       return newPet
+    },
+    delete(filter){
+      return db.get("pet")
+      .remove(filter)
+      .write()
     }
   }
 }

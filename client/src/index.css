@@ -109,6 +109,10 @@ button,.button {
 button.error, .button.error {
   background: var(--errorColor);
 }
+.red-btn{
+  background-color: #D1345B;
+  font-size:12px;
+}
 
 .col {
   padding-top: .5rem;
